@@ -52,9 +52,11 @@ var l6C8F9E35_0 = instance_place(x + 0, y + 2, [obj_floor]);if ((l6C8F9E35_0 > 
 /// @DnDAction : YoYo Games.Common.Else
 /// @DnDVersion : 1
 /// @DnDHash : 7E1043CF
+/// @DnDComment : if you're not $(13_10)on the ground
 else{	/// @DnDAction : YoYo Games.Common.If_Variable
 	/// @DnDVersion : 1
 	/// @DnDHash : 4C796F55
+	/// @DnDComment : if we are$(13_10)falling after$(13_10)a jump
 	/// @DnDParent : 7E1043CF
 	/// @DnDArgument : "var" "move_y"
 	/// @DnDArgument : "op" "1"
@@ -62,6 +64,7 @@ else{	/// @DnDAction : YoYo Games.Common.If_Variable
 	if(move_y < 10){	/// @DnDAction : YoYo Games.Common.Variable
 		/// @DnDVersion : 1
 		/// @DnDHash : 52972205
+		/// @DnDComment : add gravity
 		/// @DnDParent : 4C796F55
 		/// @DnDArgument : "expr" "1"
 		/// @DnDArgument : "expr_relative" "1"
@@ -71,6 +74,7 @@ else{	/// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDAction : YoYo Games.Movement.move_and_collide
 /// @DnDVersion : 1
 /// @DnDHash : 0566E69D
+/// @DnDComment : 1st object is$(13_10)the object to avoid
 /// @DnDArgument : "xvel" "move_x"
 /// @DnDArgument : "yvel" "move_y"
 /// @DnDArgument : "maxxmove" "walk_speed"
