@@ -221,7 +221,7 @@
   "name":"Room1",
   "parent":{
     "name":"Rooms",
-    "path":"folders/Notes/Rooms.yy",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
